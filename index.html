@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Golden Hour Glow — live mystery jewelry reveals with Brianna. Every bomb hides a real piece of jewelry valued up to $1,500. Drop it, watch it fizz, fall in love." />
+  <meta name="theme-color" content="#2b1410" />
+  <meta property="og:title" content="Golden Hour Glow — Mystery Jewelry Reveals" />
+  <meta property="og:description" content="Every bomb hides real jewelry. Drop it. Watch it fizz. Reveal your treasure. Live on TikTok with Brianna." />
+  <meta property="og:type" content="website" />
+  <title>Golden Hour Glow — Live Mystery Jewelry Reveals</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ═══════════════════ PRELOADER ═══════════════════ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__sun" aria-hidden="true"></div>
+    <div class="preloader__word">GOLDEN HOUR GLOW</div>
+    <div class="preloader__bar"><span id="preloader-fill"></span></div>
+    <div class="preloader__count"><span id="preloader-num">00</span>%</div>
+  </div>
+
+  <!-- ═══════════════════ OVERLAYS ════════════════════ -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════ NAV ═════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="brand" aria-label="Golden Hour Glow — home">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__txt">Golden Hour <i>Glow</i></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#how" class="nav-link">How it works</a></li>
+      <li><a href="#jewelry" class="nav-link">The jewelry</a></li>
+      <li><a href="#parties" class="nav-link">Live parties</a></li>
+      <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      <li><a href="#faq" class="nav-link">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://bombparty.com/goldenhourglow/products" target="_blank" rel="noopener" class="nav-cta">Shop the drop <i>→</i></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#how" class="mobile-link"><i>01</i> How it works</a>
+    <a href="#jewelry" class="mobile-link"><i>02</i> The jewelry</a>
+    <a href="#parties" class="mobile-link"><i>03</i> Live parties</a>
+    <a href="#reviews" class="mobile-link"><i>04</i> Reviews</a>
+    <a href="#faq" class="mobile-link"><i>05</i> FAQ</a>
+    <a href="https://bombparty.com/goldenhourglow/products" target="_blank" rel="noopener" class="mobile-link mobile-link--cta"><i>06</i> Shop the drop →</a>
+    <div class="mobile-menu__foot">
+      <a href="https://www.tiktok.com/@briannarose19" target="_blank" rel="noopener">@briannarose19 on TikTok ↗</a>
+      <span>Long Island, NY</span>
+    </div>
+  </div>
+
+  <main id="main">
+
+  <!-- ═══════════════════════ HERO ════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__orbs" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow reveal"><span class="dot-live"></span> Live mystery jewelry reveals · TikTok</p>
+        <h1 class="hero__title reveal">
+          Every bomb hides
+          <em>real jewelry.</em>
+          <span>Drop it. Watch it fizz. Fall in love.</span>
+        </h1>
+        <p class="hero__sub reveal">
+          Golden Hour Glow is your front-row seat to the most addicting unboxing on the internet. Pick a fizzy
+          jewelry bomb, watch it dissolve live, and reveal a hand-finished piece — valued anywhere from
+          <strong>$25 to $1,500</strong>. Guaranteed real, every single time.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="https://bombparty.com/goldenhourglow/products" target="_blank" rel="noopener" class="btn btn--primary">Shop the drop <i>→</i></a>
+          <a href="#how" class="btn btn--ghost">See how the reveal works ↓</a>
+        </div>
+        <ul class="hero__trust reveal">
+          <li><b>100%</b> real jewelry in every bomb</li>
+          <li><b>$1,500</b> top piece value</li>
+          <li><b>$19.95</b> bombs to start</li>
+        </ul>
+      </div>
+
+      <!-- HERO VISUAL — phone/creator frame playing Brianna's live-reveal clip.
+           Swap the clip by replacing assets/hero.mp4 (+ assets/hero-poster.jpg). -->
+      <div class="hero__visual reveal">
+        <div class="phone">
+          <div class="phone__notch" aria-hidden="true"></div>
+          <div class="phone__screen">
+            <video class="phone__video" src="assets/hero.mp4" poster="assets/hero-poster.jpg"
+                   autoplay muted loop playsinline preload="metadata" aria-label="Brianna hosting a live Bomb Party jewelry reveal"></video>
+            <div class="phone__scene" aria-hidden="true">
+              <div class="scene-bomb">
+                <span class="scene-bomb__fizz"></span>
+                <span class="scene-bomb__core"></span>
+                <span class="scene-bomb__ring"></span>
+              </div>
+            </div>
+            <div class="phone__live"><span class="dot-live"></span> LIVE</div>
+            <div class="phone__handle">@briannarose19</div>
+            <div class="phone__caption">Summer drop ♡ who's getting the rose-gold?</div>
+          </div>
+        </div>
+        <div class="hero__badge" aria-hidden="true">
+          <span>✦</span> guaranteed<br />real jewelry
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MARQUEE ═════════════════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Rings ✦ Necklaces ✦ Bracelets ✦ Earrings ✦ Mystery reveals ✦ Real jewelry ✦ Live drops ✦ </span>
+      <span>Rings ✦ Necklaces ✦ Bracelets ✦ Earrings ✦ Mystery reveals ✦ Real jewelry ✦ Live drops ✦ </span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ WHAT IS IT ══════════════════ -->
+  <section class="intro" id="what">
+    <div class="intro__grid">
+      <div class="intro__text reveal">
+        <p class="kicker">New here?</p>
+        <h2 class="intro__h">So… what <em>is</em> a Bomb Party?</h2>
+        <p>
+          A Bomb Party is a live jewelry reveal. We drop a fizzy "jewelry bomb" into warm water, it dissolves
+          in a cloud of color and scent, and a sealed capsule floats up with a real piece of jewelry tucked
+          inside. You don't know what you're getting until the very last second — that's the whole thrill.
+        </p>
+        <p>
+          Every bomb is guaranteed to hold a genuine, hand-finished piece. Some are sweet little everyday
+          sparkle. Some are show-stoppers valued up to <strong>$1,500</strong>. You only find out when it's revealed.
+        </p>
+        <a href="#how" class="link-arrow">Walk me through it →</a>
+      </div>
+
+      <!-- Tap-to-reveal demo -->
+      <div class="demo reveal">
+        <div class="demo__stage" id="demoStage">
+          <button class="demo__bomb" id="demoBomb" aria-label="Tap to reveal the jewelry">
+            <span class="demo__bubbles" aria-hidden="true"></span>
+            <span class="demo__label">Tap to<br />reveal</span>
+          </button>
+          <div class="demo__prize" id="demoPrize" aria-hidden="true">
+            <svg viewBox="0 0 120 120" class="demo__ring" aria-hidden="true">
+              <defs>
+                <linearGradient id="goldgrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffe6a8"/><stop offset=".5" stop-color="#f1a84e"/><stop offset="1" stop-color="#d97a3a"/>
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="74" r="30" fill="none" stroke="url(#goldgrad)" stroke-width="9"/>
+              <path d="M44 50 L60 22 L76 50 Z" fill="url(#goldgrad)"/>
+              <circle cx="60" cy="40" r="11" fill="#fff" opacity=".95"/>
+              <circle cx="60" cy="40" r="11" fill="none" stroke="url(#goldgrad)" stroke-width="3"/>
+            </svg>
+            <p class="demo__name">You revealed the <b>Rose-Gold Solitaire</b></p>
+            <p class="demo__value">Appraised value · <b>$180</b></p>
+            <button class="demo__again" id="demoAgain">Reveal another ↺</button>
+          </div>
+        </div>
+        <p class="demo__hint">Just a taste — tap the bomb 👆</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ HOW IT WORKS ════════════════ -->
+  <section class="how" id="how">
+    <div class="section-head reveal">
+      <p class="kicker">The reveal, step by step</p>
+      <h2 class="section-title">How a Golden Hour reveal works</h2>
+      <p class="section-lede">Never done this before? Here's exactly what happens from "add to cart" to the
+        moment your jewelry lands at your door. Five steps — that's it.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <div class="step__num">01</div>
+        <div class="step__icon" aria-hidden="true">🛒</div>
+        <h3>Pick your bomb</h3>
+        <p>Choose your treasure type — ring, necklace, bracelet, earrings, or a bundle. You pick the <em>style
+          lane</em>; the exact piece stays a mystery. Bombs start at just <strong>$19.95</strong>.</p>
+      </li>
+      <li class="step reveal">
+        <div class="step__num">02</div>
+        <div class="step__icon" aria-hidden="true">📱</div>
+        <h3>Join the live drop</h3>
+        <p>Hop into a live party on TikTok with Brianna — or request a <em>private reveal video</em> if you
+          can't make it. Your name gets called, and your bomb goes in.</p>
+      </li>
+      <li class="step reveal">
+        <div class="step__num">03</div>
+        <div class="step__icon" aria-hidden="true">💧</div>
+        <h3>Watch it fizz</h3>
+        <p>Your bomb drops into warm water and dissolves over about two minutes in a swirl of color and
+          scent. This is the part everyone screenshots.</p>
+      </li>
+      <li class="step reveal">
+        <div class="step__num">04</div>
+        <div class="step__icon" aria-hidden="true">✨</div>
+        <h3>The reveal</h3>
+        <p>A sealed capsule floats to the top. We unwrap it on camera and your hidden piece is revealed for
+          the very first time — live, with you.</p>
+      </li>
+      <li class="step reveal">
+        <div class="step__num">05</div>
+        <div class="step__icon" aria-hidden="true">📦</div>
+        <h3>It's yours</h3>
+        <p>Every piece is real, hand-finished jewelry valued from <strong>$25 up to $1,500</strong>. We clean
+          it, package it, and ship it straight to your door. Sizing help included.</p>
+      </li>
+    </ol>
+
+    <div class="how__cta reveal">
+      <p>That's the whole magic. Ready to drop your first bomb?</p>
+      <a href="https://bombparty.com/goldenhourglow/products" target="_blank" rel="noopener" class="btn btn--primary">Shop the drop <i>→</i></a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ THE JEWELRY ═════════════════ -->
+  <section class="jewelry" id="jewelry">
+    <div class="section-head reveal">
+      <p class="kicker">Pick your lane</p>
+      <h2 class="section-title">What's hiding inside</h2>
+      <p class="section-lede">Every bomb is guaranteed to hold a genuine piece. Choose the type you're hunting
+        for — the surprise is which exact design floats up.</p>
+    </div>
+
+    <div class="jcards">
+      <article class="jcard reveal">
+        <div class="jcard__emoji" aria-hidden="true">💍</div>
+        <h3>Rings</h3>
+        <p>The crowd favorite. Solitaires, halos, stacking bands and statement stones. Watch for the rare
+          high-value "fire" rings hidden in every collection.</p>
+        <span class="jcard__tag">Valued up to $1,500</span>
+      </article>
+      <article class="jcard reveal">
+        <div class="jcard__emoji" aria-hidden="true">📿</div>
+        <h3>Necklaces</h3>
+        <p>Delicate pendants to layered showpieces. The easiest "wear it out of the box and get compliments
+          all night" piece.</p>
+        <span class="jcard__tag">Everyday → statement</span>
+      </article>
+      <article class="jcard reveal">
+        <div class="jcard__emoji" aria-hidden="true">🔗</div>
+        <h3>Bracelets</h3>
+        <p>Tennis bracelets, bangles and dainty chains. Stack them with what you already own and build a
+          glow-up wrist.</p>
+        <span class="jcard__tag">Stackable sparkle</span>
+      </article>
+      <article class="jcard reveal">
+        <div class="jcard__emoji" aria-hidden="true">✨</div>
+        <h3>Earrings</h3>
+        <p>Studs, hoops and drops that catch the light. The perfect low-commitment first reveal if you're new
+          to the party.</p>
+        <span class="jcard__tag">Great first bomb</span>
+      </article>
+      <article class="jcard jcard--wide reveal">
+        <div class="jcard__emoji" aria-hidden="true">🎁</div>
+        <h3>Bundles &amp; gifting</h3>
+        <p>Multi-bomb bundles mean more reveals, more chances at a show-stopper, and a ready-made gift that
+          feels like an experience. Birthdays, bridesmaids, "just because" — all covered.</p>
+        <span class="jcard__tag">More drops, more magic</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ WHY US ══════════════════════ -->
+  <section class="why" id="why">
+    <div class="section-head reveal">
+      <p class="kicker">Why people get hooked</p>
+      <h2 class="section-title">More than jewelry — it's the moment</h2>
+    </div>
+    <div class="why__grid">
+      <div class="why__item reveal"><span aria-hidden="true">💎</span><h3>Guaranteed real</h3><p>No empty bombs, ever. Every drop holds a genuine, hand-finished piece.</p></div>
+      <div class="why__item reveal"><span aria-hidden="true">🎥</span><h3>The live thrill</h3><p>Your reveal happens in real time, with a crowd cheering you on.</p></div>
+      <div class="why__item reveal"><span aria-hidden="true">🤝</span><h3>A glow-up community</h3><p>Regulars, inside jokes and a host who knows your name.</p></div>
+      <div class="why__item reveal"><span aria-hidden="true">🎀</span><h3>Effortless gifting</h3><p>Give an experience, not just a box. They'll remember the reveal.</p></div>
+      <div class="why__item reveal"><span aria-hidden="true">📏</span><h3>Sizing &amp; support</h3><p>Wrong fit? Brianna helps you sort sizing and care, every time.</p></div>
+      <div class="why__item reveal"><span aria-hidden="true">🚚</span><h3>Straight to your door</h3><p>Cleaned, packaged and shipped — your treasure arrives ready to wear.</p></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ LIVE PARTIES ════════════════ -->
+  <section class="parties" id="parties">
+    <div class="parties__inner">
+      <div class="parties__copy reveal">
+        <p class="kicker">Live on TikTok</p>
+        <h2 class="section-title">Join the next party</h2>
+        <p class="section-lede">The reveals happen live with Brianna. Follow along, get your name on the list,
+          and drop your bomb with the whole party watching.</p>
+        <ol class="parties__how">
+          <li><b>1.</b> Follow <a href="https://www.tiktok.com/@briannarose19" target="_blank" rel="noopener">@briannarose19</a> on TikTok &amp; turn on notifications.</li>
+          <li><b>2.</b> Grab your bomb from the shop before (or during) the live.</li>
+          <li><b>3.</b> Show up, get called, and watch your reveal happen in real time.</li>
+        </ol>
+        <div class="parties__cta">
+          <a href="https://www.tiktok.com/@briannarose19" target="_blank" rel="noopener" class="btn btn--primary">Follow on TikTok <i>↗</i></a>
+          <a href="https://bombparty.com/goldenhourglow/products" target="_blank" rel="noopener" class="btn btn--ghost">Reserve a bomb</a>
+        </div>
+      </div>
+
+      <aside class="party-card reveal" aria-label="Featured live party">
+        <div class="party-card__live"><span class="dot-live"></span> Featured party</div>
+        <h3 class="party-card__name">Golden Hour Glow<br />— Summer Party 2 ♡</h3>
+        <p class="party-card__meta">Hosted live by Brianna · open for shopping now</p>
+        <div class="party-card__divider" aria-hidden="true"></div>
+        <p class="party-card__note">Can't make it live? Shop the drop any time and request a private reveal
+          video — same magic, on your schedule.</p>
+        <a href="https://bombparty.com/goldenhourglow/products" target="_blank" rel="noopener" class="btn btn--primary btn--full">Shop this party <i>→</i></a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ REVIEWS ═════════════════════ -->
+  <section class="reviews" id="reviews">
+    <div class="section-head reveal">
+      <p class="kicker">From the party</p>
+      <h2 class="section-title">People are obsessed</h2>
+      <p class="section-lede review-note">★ Placeholder reviews — swap in real screenshots/quotes from Brianna's TikTok comments &amp; customers.</p>
+    </div>
+    <div class="rcards">
+      <figure class="rcard reveal">
+        <div class="rcard__stars" aria-hidden="true">★★★★★</div>
+        <blockquote>"I came for one bomb and now I'm at every single live. The reveal is SO much fun and my
+          ring is gorgeous in person."</blockquote>
+        <figcaption>— Sample customer</figcaption>
+      </figure>
+      <figure class="rcard reveal">
+        <div class="rcard__stars" aria-hidden="true">★★★★★</div>
+        <blockquote>"Bought a bundle for my sister's birthday. Watching her reveal each one on the live was the
+          best gift reaction I've ever gotten."</blockquote>
+        <figcaption>— Sample customer</figcaption>
+      </figure>
+      <figure class="rcard reveal">
+        <div class="rcard__stars" aria-hidden="true">★★★★★</div>
+        <blockquote>"Brianna makes everyone feel like a regular. Helped me get my ring resized no problem.
+          Hooked!"</blockquote>
+        <figcaption>— Sample customer</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SHOP / QR ═══════════════════ -->
+  <section class="shop" id="shop">
+    <div class="shop__inner reveal">
+      <div class="shop__copy">
+        <p class="kicker">Ready when you are</p>
+        <h2 class="section-title">Scan it. Shop it. Reveal it.</h2>
+        <p class="section-lede">Point your camera at the code to jump straight to Brianna's shop and grab your
+          first bomb. Or tap the button — your reveal is one drop away.</p>
+        <div class="shop__cta">
+          <a href="https://bombparty.com/goldenhourglow/products" target="_blank" rel="noopener" class="btn btn--primary">Shop the drop <i>→</i></a>
+          <a href="https://www.tiktok.com/@briannarose19" target="_blank" rel="noopener" class="btn btn--ghost">Watch a live ↗</a>
+        </div>
+      </div>
+      <figure class="shop__qr">
+        <div class="shop__qr-frame">
+          <img src="assets/qr-code.png" alt="QR code linking to Golden Hour Glow's Bomb Party shop" />
+        </div>
+        <figcaption>Scan to shop &amp; purchase</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FAQ ═════════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="section-head reveal">
+      <p class="kicker">Good questions</p>
+      <h2 class="section-title">Before your first drop</h2>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item reveal">
+        <summary>Is the jewelry actually real?</summary>
+        <p>Yes — every bomb is guaranteed to contain a genuine, hand-finished piece of jewelry. There are no
+          empty bombs. Values range from about $25 up to $1,500.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>How much does a bomb cost?</summary>
+        <p>Jewelry bombs start at $19.95. You're paying for the bomb and the reveal — the jewelry inside is
+          frequently worth much more than what you paid.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>Do I have to be live to play?</summary>
+        <p>Nope. Live reveals are the most fun, but you can shop the drop any time and request a private
+          reveal video so you still get that surprise moment.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>What if my ring doesn't fit?</summary>
+        <p>Brianna will help you with sizing and care. Reach out and she'll walk you through your options.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>How does shipping work?</summary>
+        <p>Once your piece is revealed it's cleaned, packaged and shipped straight to your door. You'll get
+          tracking so you can watch your treasure travel.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>Where do I actually buy?</summary>
+        <p>Everything is purchased through Brianna's official Bomb Party shop — scan the code above or hit
+          any "Shop the drop" button on this page.</p>
+      </details>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ═══════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__txt">Golden Hour <i>Glow</i></span>
+        <p class="footer__tag">Live mystery jewelry reveals with Brianna.<br />Drop it. Watch it fizz. Fall in love.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="#how">How it works</a>
+        <a href="#jewelry">The jewelry</a>
+        <a href="#parties">Live parties</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Shop &amp; follow</h4>
+        <a href="https://bombparty.com/goldenhourglow/products" target="_blank" rel="noopener">Shop the drop ↗</a>
+        <a href="https://www.tiktok.com/@briannarose19" target="_blank" rel="noopener">@briannarose19 on TikTok ↗</a>
+      </div>
+      <div class="footer__col">
+        <h4>Get in touch</h4>
+        <a href="tel:+16312058665">631-205-8665</a>
+        <a href="mailto:brianna_lamacchia@yahoo.com">brianna_lamacchia@yahoo.com</a>
+        <span class="footer__muted">Long Island, NY</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> Golden Hour Glow · Brianna Lamacchia, Independent Bomb Party Rep.</p>
+      <p class="footer__muted">Independent representative of Bomb Party, LLC™. Jewelry values are estimates set by Bomb Party, LLC.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
